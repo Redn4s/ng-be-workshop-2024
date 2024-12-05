@@ -1,4 +1,4 @@
-app = 'ng-be-miro-24'
+app = 'nx-movies-app'
 primary_region = 'lax'
 
 [build]
