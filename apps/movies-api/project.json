@@ -52,6 +52,7 @@
         "distLocation": "dist/apps/movies-api",
         "flyAppName": "nx-movies-app"
       },
+      "inputs": [{ "runtime": "fly version" }],
       "dependsOn": [{ "target": "build", "projects": "self", "params": "forward" }]
     },
     "test": {
