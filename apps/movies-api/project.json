@@ -39,8 +39,7 @@
             "apps/movies-api/src/assets",
             "apps/movies-api/src/fly.toml",
             "apps/movies-api/src/Dockerfile",
-            "apps/movies-api/src/.dockerignore",
-            "apps/movies-api/src/.local.env"
+            "apps/movies-api/src/.dockerignore"
           ]
         }
       }
