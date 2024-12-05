@@ -45,6 +45,15 @@
         }
       }
     },
+    "deploy": {
+      "executor": "@nx-workshop/internal-plugin:fly-deploy",
+      "outputs": [],
+      "options": {
+        "distLocation": "dist/apps/movies-api",
+        "flyAppName": "nx-movies-app"
+      },
+      "dependsOn": [{ "target": "build", "projects": "self", "params": "forward" }]
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
