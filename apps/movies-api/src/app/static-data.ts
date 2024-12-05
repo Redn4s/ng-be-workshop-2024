@@ -1,5 +1,6 @@
 import { TMDBMovieModel } from '@nx-workshop/models';
 
+// Note(Sander): This is a mock of the TMDB API response
 const popularMovies = [
   {
     "adult": false,
