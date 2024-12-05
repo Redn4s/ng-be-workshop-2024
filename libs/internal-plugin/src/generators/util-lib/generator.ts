@@ -6,6 +6,7 @@ import {
 } from '@nx/devkit';
 import * as path from 'path';
 import { UtilLibGeneratorSchema } from './schema';
+import { libraryGenerator } from '@nx/js';
 
 export async function utilLibGenerator(
   tree: Tree,
@@ -19,6 +20,9 @@ export async function utilLibGenerator(
     targets: {},
   });
   generateFiles(tree, path.join(__dirname, 'files'), projectRoot, options);
+  await libraryGenerator(tree, {
+    directory: options.name,
+  });
   await formatFiles(tree);
 }
 

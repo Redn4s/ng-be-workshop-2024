@@ -12,6 +12,12 @@
         "index": 0
       },
       "x-prompt": "What name would you like to use?"
+    },
+    "directory": {
+      "type": "string",
+      "description": "The directory where the new library will be generated.",
+      "x-prompt": "In which directory should the project be created?",
+      "default": "libs"
     }
   },
   "required": ["name"]
