@@ -41,6 +41,7 @@
       "@nx-workshop/movies/ui-movie-list": [
         "libs/movies/ui-movie-list/src/index.ts"
       ],
+      "@nx-workshop/notifications": ["libs/api/notifications/src/index.ts"],
       "@nx-workshop/shared/feature-not-found-page": [
         "libs/shared/feature-not-found-page/src/index.ts"
       ],
