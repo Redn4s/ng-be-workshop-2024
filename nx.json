@@ -40,6 +40,14 @@
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
+    },
+    "deploy": {
+      "dependsOn": ["build"],
+      "inputs": [
+        "production",
+        "^production",
+        { "externalDependencies": ["nx" ]}
+      ]
     }
   },
   "plugins": [
