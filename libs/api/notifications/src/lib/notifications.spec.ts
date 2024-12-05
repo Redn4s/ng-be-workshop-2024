@@ -1,7 +1,7 @@
-import { notifications } from './notifications';
+import { notification } from './notifications';
 
 describe('notifications', () => {
   it('should work', () => {
-    expect(notifications()).toEqual('notifications');
+    expect(notification()).toEqual('notifications');
   });
 });
