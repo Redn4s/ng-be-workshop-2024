@@ -3,7 +3,10 @@ import { ExecutorContext } from '@nx/devkit';
 import { FlyDeployExecutorSchema } from './schema';
 import executor from './executor';
 
-const options: FlyDeployExecutorSchema = {};
+const options: FlyDeployExecutorSchema = {
+  distLocation: '',
+  flyAppName: ''
+};
 const context: ExecutorContext = {
   root: '',
   cwd: process.cwd(),
