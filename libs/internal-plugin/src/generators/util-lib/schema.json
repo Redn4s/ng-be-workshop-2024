@@ -15,10 +15,27 @@
     },
     "directory": {
       "type": "string",
-      "description": "The directory where the new library will be generated.",
-      "x-prompt": "In which directory should the project be created?",
-      "default": "libs"
+      "description": "Provide the library type",
+      "enum": ["movies", "api", "shared"],
+      "x-prompt": {
+        "message": "Where do you wanna generate it?",
+        "type": "list",
+        "items": [
+          {
+            "value": "movies",
+            "label": "Movies"
+          },
+          {
+            "value": "api",
+            "label": "API"
+          },
+          {
+            "value": "shared",
+            "label": "Shared"
+          }
+        ]
+      }
     }
   },
-  "required": ["name"]
+  "required": ["name", "directory"]
 }

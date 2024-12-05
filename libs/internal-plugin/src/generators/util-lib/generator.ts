@@ -12,16 +12,8 @@ export async function utilLibGenerator(
   tree: Tree,
   options: UtilLibGeneratorSchema
 ) {
-  const projectRoot = `libs/${options.name}`;
-  addProjectConfiguration(tree, options.name, {
-    root: projectRoot,
-    projectType: 'library',
-    sourceRoot: `${projectRoot}/src`,
-    targets: {},
-  });
-  generateFiles(tree, path.join(__dirname, 'files'), projectRoot, options);
   await libraryGenerator(tree, {
-    directory: options.name,
+    directory: `libs/${options.directory}/${options.name}`,
   });
   await formatFiles(tree);
 }
