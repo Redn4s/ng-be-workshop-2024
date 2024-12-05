@@ -40,7 +40,7 @@ function updateSchemaJson(tree: Tree, scopes: string[]) {
 function updateSchemaInterface(tree: Tree, scopes: string[]) {
   const joinScopes = scopes.map((s) => `'${s}'`).join(' | ');
   const interfaceDefinitionFilePath = 'libs/internal-plugin/src/generators/util-lib/schema.d.ts';
-  const newContent = `export interface UpdateScopeSchemaGeneratorSchema {
+  const newContent = `export interface UtilLibGeneratorSchema {
     name: string;
     directory: ${joinScopes};
   }`;
